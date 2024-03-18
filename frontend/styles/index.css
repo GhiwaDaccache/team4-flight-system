@@ -40,6 +40,28 @@ header {
     margin: 5px;
 }
 
+.btn-secondary{
+    background-color: transparent;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    color: #126FE7;
+    border: 2px solid #126FE7;
+    border-radius: 3px;
+    height: 35px;
+    width: 100px;
+    margin: 5px;
+}
+
+.card{
+    
+}
+
+
 footer {
     background-color: #C7E0FF;
     height: 70px;
@@ -48,6 +70,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    font-size: 12px;
   }
 
 .footer-text {

@@ -25,19 +25,61 @@
         <h1 class="font"> Flighter</h1>
 
         <div class="tabs">
-            <a href="#">Tab 1</a>
-            <a href="#">Tab 2</a>
-            <a href="#">Tab 3</a>
-            <a href="#">Tab 4</a>
+            <a href="#">Home</a>
+            <a href="#">Live</a>
+            <a href="#">Payment</a>
+            <a href="#">Profile</a>
           </div>
 
         <div class="flex">
-            <button class="btn-style btn">Login</button>
-            <button class="btn-style btn">Sign up</button>
+            <button class="btn-style btn" id="login-btn">Login</button>
+            <button class="btn-style btn" id="signup-btn">Sign up</button>
         </div>
 
     </header>
     
+
+    <section class="filter flex gap align-center">
+        <div class="column gap">
+            <h5>Way</h5>
+            <div class="flex column input">
+                <select name="type" id="type-input">
+                  <option value="One way">One way</option>
+                  <option value="Two ways">Two ways</option>
+                </select>
+              </div>
+        </div>
+        <div class="column gap">
+            <h5>From</h5>
+            <div class="flex column input">
+                <select name="type" id="type-input">
+                  <option value="LEB">LEB</option>
+                 
+                </select>
+              </div>
+        </div>
+        <div class="column gap">
+            <h5>To</h5>
+            <div class="flex column input">
+                <select name="type" id="type-input">
+                  <option value="FR">FR</option>
+                  
+                </select>
+              </div>
+        </div>
+        <div class="column gap">
+            <h5>Departure date</h5>
+            <input type="date">
+        </div>
+        <div class="column gap">
+            <h5>Return date</h5>
+            <input type="date">
+        </div>
+        <a type="button" href="#" id="search" class=" light-iron-gray-bg"><i class="fa-solid fa-magnifying-glass dark"></i></a>
+    </section>
+    
+
+
 
     <footer class="flex align-center justify-between">
         <div class="footer-text">
