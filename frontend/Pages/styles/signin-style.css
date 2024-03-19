@@ -1,6 +1,6 @@
 .container-section{
-    margin-top: 7%;
-    height: 86%;
+   
+    height: 100%;
     width: 100%;
 }
 .background{
@@ -15,19 +15,19 @@
 
 .form-container{
     
-    height: 100%;
+    height: 110vh;
     width: 49%;
     flex-grow: 1;
 }
 #signin-form{
     padding-top: 5%;
     width: 60%;
-    height: 60%;
+    height: fit-content;
     background-color: #C7DFFF;
     border-radius: 0.3rem;
 }
 
-h2,h5,span{
+h2,h5{
     display: flex;
     margin-left: 10px;
     justify-self: start;
@@ -53,7 +53,9 @@ h2{
     width: 100%;
     margin-left: 10px;
 }
-
+span{
+    margin-left: 4%;
+}
 a{
     flex-grow: 1;
     text-decoration: none;
@@ -70,4 +72,5 @@ button{
     font-size: 1.3rem;
    background-color: #126FE7;
    color: white;
+   margin-bottom: 10px;
 }
