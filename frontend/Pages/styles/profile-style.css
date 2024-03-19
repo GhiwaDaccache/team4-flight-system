@@ -1,0 +1,88 @@
+#profile-img{
+    margin-top: 20%;
+    height: 45%;
+    width: 70%;
+    border-radius: 50%;
+}
+section{
+    background-color: lightgray;
+    height: 90vh;
+    width: 100%;
+}
+.data-container{
+justify-content: space-between;
+border: 1px none solid;
+height: 100vh;
+width: 30%;
+background-color:white ;
+}
+.icons{
+    height: 40px;
+    width: 40px;
+}
+.chat-admin{
+    position: relative;
+    left: 0%;
+}
+.pref-item{
+    width: 15%;
+}
+.prefer-card{
+    background-color: white;
+    border-radius: 0.2rem;
+    height: 40vh;
+    width: 20vh;
+}
+.prefer-card>img{
+    height: 45%;
+    width: 100%;
+    border-radius:0.2rem;
+}
+.card-footer{
+    justify-content: space-between;
+    padding: 3px;
+}
+.profile-footer {
+    justify-content: space-between;
+   
+}
+.prefernces{
+    height:50%;
+    
+    padding: 10px;
+}
+.pref-list{
+    height: 10rem;
+    width: 70%;
+   overflow-x: scroll;
+   list-style: none;
+   margin-left: 3%;
+
+}
+.prefernces>h2{
+    margin-left: 3%;
+}
+.lists-container{
+    width: 50%;
+    flex-grow: 1;
+}
+.pref-list::-webkit-scrollbar{
+    display: none;
+}
+.flights-reviews{
+    width: 100%;
+}
+.grow{
+    width: 60vh;
+}
+.last-traps{
+    padding-left: 5%;
+    list-style: none;
+}
+
+.flights-reviews>h2{
+ margin-left: 5%;
+}
+.informations{
+    margin-bottom: 20%;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flighter</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/utilities.css">
+    <link rel="stylesheet" href="../styles/flights.css">
+
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/96cf59c222.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+    <header class="flex justify-between align-center">
+        <h1 class="font"> Flighter</h1>
+
+        <div class="tabs">
+            <a href="#"><u>Home</u></a>
+            <a href="#">Live</a>
+            <a href="#">Payment</a>
+            <a href="#">Profile</a>
+          </div>
+
+        <div class="flex">
+            <button class="btn-style btn" id="login-btn">Login</button>
+            <button class="btn-style btn" id="signup-btn">Sign up</button>
+        </div>
+
+    </header>
+    
+    <section class="main flex column gap align-center">
+        <h2>Find your next flight</h2>
+        <section class="filter flex align-center justify-around">
+            <div class="column gap">
+                <h5>Way</h5>
+                <div class="flex column input">
+                    <select name="type" id="type-input">
+                    <option value="One way">One way</option>
+                    <option value="Two ways">Two ways</option>
+                    </select>
+                </div>
+            </div>
+            <div class="column gap">
+                <h5>From</h5>
+                <div class="flex column input">
+                    <select name="type" id="type-input">
+                    <option value="LEB">LEB</option>
+                    
+                    </select>
+                </div>
+            </div>
+            <div class="column gap">
+                <h5>To</h5>
+                <div class="flex column input">
+                    <select name="type" id="type-input">
+                    <option value="FR">FR</option>
+                    
+                    </select>
+                </div>
+            </div>
+            <div class="column gap">
+                <h5>Departure date</h5>
+                <input type="date">
+            </div>
+            <div class="column gap">
+                <h5>Return date</h5>
+                <input type="date">
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass  primary"></i>
+            </div>
+        </section>
+        <h2>Results</h2>
+        <section class="cards-container flex column center gap">
+            <div class="booking-card flex justify-between ">
+                <div>
+                    <i class="fa-solid fa-plane-up"></i>
+                    <br>
+                    <br>
+                    <i class="fa-solid fa-plane-up"></i>
+                </div>
+                <div>
+                    <p>5h 00  pm - 8h 30  pm </p>
+                    <br>
+                    <p>Transavia France</p>
+                </div>
+                <div>
+                    <p>Non stop</p>
+                    <br>
+                    <p>1 stop</p>
+                </div>
+                <div>
+                    <p>BEI-FRA</p>
+                    <br>
+                    <p>FRA-BEI</p>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <p> 240$ </p>
+                    <p>Economy</p>
+                    <button class="btn-style btn" id="flight-btn">Learn more</button>
+                </div>
+            </div>
+
+            <div class="booking-card flex justify-between ">
+                <div>
+                    <i class="fa-solid fa-plane-up"></i>
+                    <br>
+                    <br>
+                    <i class="fa-solid fa-plane-up"></i>
+                </div>
+                <div>
+                    <p>5h 00  pm - 8h 30  pm </p>
+                    <br>
+                    <p>Transavia France</p>
+                </div>
+                <div>
+                    <p>Non stop</p>
+                    <br>
+                    <p>1 stop</p>
+                </div>
+                <div>
+                    <p>BEI-FRA</p>
+                    <br>
+                    <p>FRA-BEI</p>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <p> 240$ </p>
+                    <p>Economy</p>
+                    <button class="btn-style btn" id="flight-btn">Learn more</button>
+                </div>
+            </div>
+
+            <div class="booking-card flex justify-between ">
+                <div>
+                    <i class="fa-solid fa-plane-up"></i>
+                    <br>
+                    <br>
+                    <i class="fa-solid fa-plane-up"></i>
+                </div>
+                <div>
+                    <p>5h 00  pm - 8h 30  pm </p>
+                    <br>
+                    <p>Transavia France</p>
+                </div>
+                <div>
+                    <p>Non stop</p>
+                    <br>
+                    <p>1 stop</p>
+                </div>
+                <div>
+                    <p>BEI-FRA</p>
+                    <br>
+                    <p>FRA-BEI</p>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <p> 240$ </p>
+                    <p>Economy</p>
+                    <button class="btn-style btn" id="flight-btn">Learn more</button>
+                </div>
+            </div>
+
+
+
+
+
+                
+            
+
+        </section>
+
+
+    </section>
+
+
+
+    <footer class="flex align-center justify-between">
+        <div class="footer-text">
+            Copyright © 1996–2024 flighter.com™. All rights reserved
+        </div>
+        <div class="flex gap">
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer>
+
+
+</body>
+</html>

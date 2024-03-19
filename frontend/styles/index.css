@@ -40,6 +40,62 @@ header {
     margin: 5px;
 }
 
+.btn-secondary{
+    background-color: transparent;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    color: #126FE7;
+    border: 2px solid #126FE7;
+    border-radius: 3px;
+    height: 35px;
+    width: 100px;
+    margin: 5px;
+}
+
+.main{
+    padding: 20px 30px;
+}
+
+.filter{
+    background-color: white;
+    box-shadow:0 2px 4px rgba(0,0,0,0.1) ;
+    height:5rem;
+    padding: 5px;
+    width: 100%;
+    border-radius: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif, Geneva, Tahoma, sans-serif;
+}
+
+
+.input>select,input{
+    border-style: none;
+    border: 1px solid rgb(101, 101, 101);
+    height: 2rem;
+    border-radius: 0.2rem;
+    width: 10rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif, Geneva, Tahoma, sans-serif;
+}
+
+.main>h2{
+    font-size: 24px;
+    width: 100%;
+    text-align: left;
+
+}
+
+  
+.cards-container {
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0px 50px;
+  }
+
 footer {
     background-color: #C7E0FF;
     height: 70px;
@@ -48,6 +104,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    font-size: 12px;
   }
 
 .footer-text {
@@ -55,3 +112,22 @@ footer {
     text-align: center;
 }
 
+.card{
+    padding: 20px;
+    flex-grow: 1;
+    max-width: 400px;
+    min-width: 200px;
+    width: 300px;
+    height: 350px;
+    box-shadow:0 2px 4px rgba(0,0,0,0.1) ;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.card > img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+  }

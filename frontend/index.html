@@ -25,19 +25,108 @@
         <h1 class="font"> Flighter</h1>
 
         <div class="tabs">
-            <a href="#">Tab 1</a>
-            <a href="#">Tab 2</a>
-            <a href="#">Tab 3</a>
-            <a href="#">Tab 4</a>
+            <a href="#"><u>Home</u></a>
+            <a href="#">Live</a>
+            <a href="#">Payment</a>
+            <a href="#">Profile</a>
           </div>
 
         <div class="flex">
-            <button class="btn-style btn">Login</button>
-            <button class="btn-style btn">Sign up</button>
+            <button class="btn-style btn" id="login-btn">Login</button>
+            <button class="btn-style btn" id="signup-btn">Sign up</button>
         </div>
 
     </header>
     
+    <section class="main flex column gap align-center">
+        <h2>Find your next flight</h2>
+        <section class="filter flex align-center justify-around">
+            <div class="column gap">
+                <h5>Way</h5>
+                <div class="flex column input">
+                    <select name="type" id="type-input">
+                    <option value="One way">One way</option>
+                    <option value="Two ways">Two ways</option>
+                    </select>
+                </div>
+            </div>
+            <div class="column gap">
+                <h5>From</h5>
+                <div class="flex column input">
+                    <select name="type" id="from-input"></select>
+                </div>
+            </div>
+
+            <div class="column gap">
+                <h5>To</h5>
+                <div class="flex column input">
+                    <select name="type" id="to-input"></select>
+                </div>
+            </div>
+            <div class="column gap">
+                <h5>Departure date</h5>
+                <input type="date">
+            </div>
+            <div class="column gap">
+                <h5>Return date</h5>
+                <input type="date">
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass  primary"></i>
+            </div>
+        </section>
+        <h2>Your favorite airlines</h2>
+        <section class="cards-container flex center">
+            <div class="card">
+                <img src="./styles/assets/83620_indigo_645553.jpg" />
+                <div>
+                    <p>Airline name</p>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./styles/assets/83620_indigo_645553.jpg" />
+                <div>
+                    <p>Airline name</p>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./styles/assets/83620_indigo_645553.jpg" />
+                <div>
+                    <p>Airline name</p>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./styles/assets/83620_indigo_645553.jpg" />
+                <div>
+                    <p>Airline name</p>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+
+
 
     <footer class="flex align-center justify-between">
         <div class="footer-text">
@@ -50,6 +139,8 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../frontend/scripts/load-filter.js"></script>
 
 </body>
 </html>
