@@ -4,12 +4,13 @@ const resultsTitle = document.getElementById("results-title");
 const adsSection = document.getElementById("ads-section");
 const adsTitle = document.getElementById("ads-title");
 let waysInput = document.getElementById("type-input");
-const returnDate = document.getElementById("return-date");
+let returnDate = document.getElementById("return-date");
 let ways = waysInput.options[waysInput.selectedIndex].value;
 
 waysInput.addEventListener('change', ()=>{
   ways = waysInput.options[waysInput.selectedIndex].value;
   if(ways == "One way"){
+    returnDate.value = "";
     returnDate.disabled = true;
   }
   else{
