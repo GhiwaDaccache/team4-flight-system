@@ -1,0 +1,28 @@
+.table-header-left{
+    gap: 100px;
+}
+
+.table-header{
+    padding: 30px;
+}
+
+.table-card{
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 90px;
+    padding: 0px 20px;
+}
+
+.cards-container-f{
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0px 50px;
+    padding: 0px 30px;
+    
+}
+
+.table-header-left>p{
+    font-size: 18px;
+}
