@@ -13,7 +13,7 @@ if($num_rows==0){
     $response['status']="failed";
     $response['first name']=$first_name;
 }else{
-    if($password==$password_hash){
+    if(password_verify($password, $password_hash)){
         $response['status']="success";
         $response['first name']=$first_name;
         $response['last name']=$last_name;

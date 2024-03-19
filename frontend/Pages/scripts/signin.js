@@ -1,11 +1,12 @@
 const signin_form=document.querySelector("#signin-form");
+const submit_btn=document.querySelector("#submit");
 const post="http://localhost/flight-agency-project/backend/signin.php";
 
 
 const checkInputs=(input)=>{
     return input==''
 }
-signin_form.addEventListener("submit",()=>{
+submit_btn.addEventListener("click",()=>{
     const username=document.querySelector("#username");
     const password=document.querySelector("#password");
     if(checkInputs(username.value)){
@@ -26,17 +27,22 @@ signin_form.addEventListener("submit",()=>{
             username:username.value,
             password:password.value
         }
-       
+        const formData= new FormData();
+       formData.append("username",username.value);
+       formData.append("password",password.value);
        const validate=async ()=>{
          try{ 
-        const result=await axios.post(post,data)
-        const response=await result.json()
-        if(response.status=="success"){
-        localStorage.setItem("credentials", JSON.stringify({username:username.value,password:password.value,response}))
-        window.location.href="/path"
+        const result=await axios.post(post,formData)
+        const response=await result
+        const data=response.data;
+        console.log(data);
+        if(data.status=="success"){
+            alert("every think under control")
+        localStorage.setItem("credentials", JSON.stringify({username:username.value,password:password.value,data}))
+        window.location.href="./signup.html"
     }
     else{
-        const wrong=document.querySelector(".wrong-signin");
+        const wrong=document.querySelector("./signup.html");
         wrong.className="display-block"
     }
     }

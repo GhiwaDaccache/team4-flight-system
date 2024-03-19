@@ -6,7 +6,8 @@ const checkInputs=(input)=>{
     return input==''
 }
 
-signin_form.addEventListener("submit",()=>{
+signin_form.addEventListener("submit",(event)=>{
+    event.preventDefault();
     const username=document.querySelector("#username");
     const password=document.querySelector("#password");
     const email=document.querySelector("#email");
