@@ -1,17 +1,19 @@
 const signin_form=document.querySelector("#signup-form");
-const post="http://localhost/flight-agency-project/signup.php";
+const signup_btn=document.querySelector("#submit");
+const post="http://localhost/flight-agency-project/backend/signup.php";
 
 
 const checkInputs=(input)=>{
     return input==''
 }
 
-signin_form.addEventListener("submit",(event)=>{
+signup_btn.addEventListener("click",(event)=>{
     event.preventDefault();
-    const username=document.querySelector("#username");
+    const firstname=document.querySelector("#firstname");
+    const lastname=document.querySelector("#lastname");
     const password=document.querySelector("#password");
     const email=document.querySelector("#email");
-    if(checkInputs(username.value)){
+    if(checkInputs(firstname.value)){
         const empty_username=document.querySelector(".empty-username");
         empty_username.className="display-block"
     } else if(checkInputs(password.value)){
@@ -21,27 +23,31 @@ signin_form.addEventListener("submit",(event)=>{
         const empty_email=document.querySelector(".empty-email");
         empty_password.className="display-block"
     }
-    else if(checkInputs(username.value)&&checkInputs(password.value)&&checkInputs(email.value)){
-        const empty_username=document.querySelector(".empty-username");
-        empty_username.className="display-block"
+    else if(checkInputs(firstname.value)&&checkInputs(password.value)&&checkInputs(email.value)){
+        const empty_firstname=document.querySelector(".empty-firstname");
+        empty_firstname.className="display-block"
         const empty_password=document.querySelector(".empty-password");
         empty_password.className="display-block"
         const empty_email=document.querySelector(".empty-email");
         empty_password.className="display-block"
     }
     else{
-        const data={
-            username:username.value,
-            password:password.value
-        }
        
+        const formData= new FormData();
+        formData.append("first_name",firstname.value);
+        formData.append("last_name",lastname.value);
+        formData.append("email",email.value);
+        formData.append("password",password.value);
+        
        const validate=async ()=>{
          try{ 
-        const result=await axios.post(post,data)
-        const response=await result.json()
+        const result=await axios.post(post,formData)
+        const response=await result.data
+        console.log(response);
         if(response.status=="success"){
-        localStorage.setItem("credentials", JSON.stringify({username:username.value,password:password.value,email:email.value}))
-        window.location.href="/path"
+            console.log("Everythink under control");
+       // localStorage.setItem("credentials", JSON.stringify({firstname:firstname.value,lastname:lastname.value,email:email.value,password:password.value}))
+        window.location.href="./signin.html"
     }
     else{
         const wrong=document.querySelector(".wrong-signup");
