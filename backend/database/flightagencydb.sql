@@ -133,3 +133,5 @@ ALTER TABLE `chats` ADD FOREIGN KEY (`admin_id`) REFERENCES `admins` (`id`);
 ALTER TABLE `messages` ADD FOREIGN KEY (`chat_id`) REFERENCES `chats` (`id`);
 
 ALTER TABLE `messages` ADD FOREIGN KEY (`sender_id`) REFERENCES `users` (`id`);
+
+ALTER TABLE `flights` ADD price int;

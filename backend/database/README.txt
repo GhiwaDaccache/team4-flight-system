@@ -13,3 +13,7 @@ here are some constraints for some fields, just keep them on your mind, DO NOTT 
 --ALTER TABLE `bookings` MODIFY (`payment_status`) ENUM('pending', 'paid', 'canceled');
 
 --ALTER TABLE `coins_request` MODIFY (`status`) ENUM('pending', 'approved', 'rejected');
+
+
+I ADDED SQL DUMP FILE:
+Kindly just copy sql and paste in your phpMyAdmin to populate your database with some data
