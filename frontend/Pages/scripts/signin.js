@@ -1,5 +1,5 @@
 const signin_form=document.querySelector("#signin-form");
-const post="http://localhost/flight-agency-project/signin.php";
+const post="http://localhost/flight-agency-project/backend/signin.php";
 
 
 const checkInputs=(input)=>{

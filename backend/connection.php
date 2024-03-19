@@ -2,7 +2,7 @@
 $host = "localhost";
 $db_user = "root";
 $db_pass = null;
-$db_name = "dbname";
+$db_name = "flight_website";
 
 $mysqli = new mysqli($host, $db_user, $db_pass, $db_name);
 
