@@ -31,8 +31,8 @@ signin_form.addEventListener("submit",()=>{
          try{ 
         const result=await axios.post(post,data)
         const response=await result.json()
-        if(result.status==success){
-        localStorage.setItem("credentials", JSON.stringify({username:username,password:password}))
+        if(response.status=="success"){
+        localStorage.setItem("credentials", JSON.stringify({username:username,password:password,response}))
         window.location.href="/path"
     }
     else{
@@ -44,6 +44,6 @@ signin_form.addEventListener("submit",()=>{
         console.log(err.message)
     }
     }
-
+    validate();
     }
 })
