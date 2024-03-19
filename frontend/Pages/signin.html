@@ -16,12 +16,16 @@
         <div class="form-container flex-items mid">
             <form action="" id="signin-form" class="to-column mid Gap-10">
                 <h2>Welcome back</h2>
+                <span class="display-none prussian-red wrong-signin">Wrong email or password!!</span>
                 <div class="to-column">
                 <h5>username</h5>
+                <span class="prussian-red empty-username display-none">Please enter username</span>
                 <input type="text"value="username"id="username" class="gray-color">
+                
             </div>
             <div class="to-column">
                 <h5>password</h5>
+                <span class="prussian-red empty-password display-none ">Please enter password</span>
                 <input type="password"value="password"id="password" class="gray-color" >
             </div>
                 <span class="flex-items gray-color">Don't have an account ?<a  href="#"><h5>Sign Up</h5></a></span>
@@ -29,5 +33,7 @@
                 <button type="submit">Login</button></form>
         </div>
     </section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./scripts/signin.js"></script>
 </body>
 </html>
