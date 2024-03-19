@@ -39,7 +39,7 @@ signin_form.addEventListener("submit",()=>{
         const result=await axios.post(post,data)
         const response=await result.json()
         if(response.status=="success"){
-        localStorage.setItem("credentials", JSON.stringify({username:username,password:password,response}))
+        localStorage.setItem("credentials", JSON.stringify({username:username.value,password:password.value,email:email.value}))
         window.location.href="/path"
     }
     else{
