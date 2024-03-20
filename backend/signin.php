@@ -14,6 +14,11 @@ if($num_rows==0){
     $response['first name']=$first_name;
 }else{
     if(password_verify($password, $password_hash)){
+        $query->prepare("SELECT EXISTS(SELECT 1 FROM admins WHERE id = ?) ");
+         $query->bind_param('i',$id);
+        $query->execute();
+        $query->store_result();
+        $is_admin=$query->num_rows();
         $response['status']="success";
         $response["id"]=$id;
         $response['first name']=$first_name;
@@ -22,10 +27,12 @@ if($num_rows==0){
         $response["passport"]=$passport_number;
         $response["date_of_birth"]=$date_of_birth;
         $response["coins"]=$coins;
+        $response["isAdmin"]=$is_admin;
     }
     else{
         $response['status']="failed";
        
     }
 }
+
 echo json_encode($response);
