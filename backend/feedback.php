@@ -14,7 +14,7 @@ $host = "localhost";
 $db_user = "root";
 $db_pass = null;
 
-$db_name = "flightagencydb";
+$db_name = "flight_website";
 
 
 

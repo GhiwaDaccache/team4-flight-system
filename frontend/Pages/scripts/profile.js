@@ -7,9 +7,50 @@ const feed_back=document.querySelector("#feedback");
 const open_feed_back=document.querySelector("#feed-back-btn");
 const close_feed_back=document.querySelector("#close-feddback");
 const send_feed_back=document.querySelector("#send");
+const user_data=localStorage.getItem("credentials");
 
+const get_message_url="http://localhost/flight-agency-project/backend/getmessages.php";
+const send_message_url="localhost/flight-agency-project/backend/sendmessage.php";
+const send_feedback_url="localhost/flight-agency-project/backend/sendfeedback.php";
 
+const fill_messages=(data)=>{
+   for(message in data){
+    send_message(message["message"],"user")
+   }
+   
+}
+const getMessages=async (url,sender_id)=>{
+    try{
+    const formData =new FormData();
+    formData.append("sender_id",sender_id)
+    const result=await axios.post(url,formData);
+    const data=await result;
+    fill_messages(data)
 
+}
+    catch(err){
+        console.log(err)
+    }
+}
+
+const fill_infos=(data)=>{
+    if(data){
+        const first_name=document.querySelector("#firstname");
+        const last_name=document.querySelector("#lastname");
+        const birth_date=document.querySelector("#birth-date");
+        const pass_num=document.querySelector("#pass-num");
+        const coins=document.querySelector("#coins");
+        const informations=JSON.parse(data).data;
+        console.log(informations)
+        first_name.innerHTML=informations["first name"];
+        last_name.innerHTML=informations["last name"];
+        birth_date.innerHTML=informations["date_of_birth"];
+        pass_num.innerHTML=informations["passport"];
+        coins.innerHTML=informations["coins"];
+        getMessages(get_message_url,informations["id"])
+    }
+}
+fill_infos(user_data)
 const close=(target_id)=>{
     document.querySelector(`#${target_id}`).classList.add("hide");
 }

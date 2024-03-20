@@ -8,3 +8,4 @@ $query=$mysqli->prepare("insert into messages(id,chat_id,sender_id,message_text)
 $query->bind_param('ssss',$receiver_id,$chat_id,$sender_id,$message);
 $query->execute();
 $response["response"]="sended";
+echo json_encode($response);
