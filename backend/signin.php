@@ -24,8 +24,7 @@ if($num_rows==0){
     }
     else{
         $response['status']="failed";
-        $response['password']=$password_hash;
-        $response['name']=$first_name;
+       
     }
 }
 echo json_encode($response);

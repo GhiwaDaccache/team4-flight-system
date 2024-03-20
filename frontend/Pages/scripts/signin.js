@@ -37,12 +37,13 @@ submit_btn.addEventListener("click",()=>{
         const data=response.data;
        
         if(data.status=="success"){
-           
+          
         localStorage.setItem("credentials", JSON.stringify({username:username.value,password:password.value,data}))
-        window.location.href="./profile.js"
+        window.location.href="./profile.html"
     }
     else{
-        const wrong=document.querySelector("./signup.html");
+        
+        window.location.href="./signup.html";
         wrong.className="display-block"
     }
     }
