@@ -1,3 +1,4 @@
+
 #profile-img{
     margin-top: 20%;
     height: 45%;
@@ -7,6 +8,12 @@
 section{
     background-color: lightgray;
     height: 90vh;
+    width: 100%;
+}
+.feed-items{
+    width: 90%;
+}
+.feed-input{
     width: 100%;
 }
 .data-container{
@@ -130,6 +137,8 @@ background-color:white ;
 
 }
 .chat-header{
+    color: #446188;
+    background-color: #C7DFFF;
    position: relative;
    top: 0;
     width: 100%;
@@ -198,4 +207,14 @@ align-items: end;
     border-radius: 0.5rem;
     min-height: 1.5rem;
   font-size: 0.8rem;
+}
+#close-feddback{
+position: relative;
+width: 2rem;
+left: 95%;
+cursor: pointer;
+background-color: white;
+}
+.form-body{
+    height: fit-content;
 }

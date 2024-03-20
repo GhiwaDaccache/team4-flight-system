@@ -35,11 +35,11 @@ submit_btn.addEventListener("click",()=>{
         const result=await axios.post(post,formData)
         const response=await result
         const data=response.data;
-        console.log(data);
+       
         if(data.status=="success"){
-            alert("every think under control")
+           
         localStorage.setItem("credentials", JSON.stringify({username:username.value,password:password.value,data}))
-        window.location.href="./signup.html"
+        window.location.href="./profile.js"
     }
     else{
         const wrong=document.querySelector("./signup.html");

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/My-tools/styles/layouts.css">
     <link rel="stylesheet" href="./styles/My-tools/styles/colors.css">
-    <link rel="stylesheet" href="./styles/profile-style.css">
+    
     <link rel="stylesheet" href="./styles/My-tools/styles/fonts.css">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,11 +17,12 @@
     <!-- Links -->
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/utilities.css">
-   
+    <link rel="stylesheet" href="./styles/profile-style.css">
 
 
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/96cf59c222.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <header class="flex justify-between align-center">
@@ -34,9 +35,10 @@
             <a href="#">Profile</a>
           </div>
 
-        <div class="flex">
+        <div class="flex head-btn">
             <button class="btn-style btn" id="login-btn">Login</button>
             <button class="btn-style btn" id="signup-btn">Sign up</button>
+            <button class="btn-style btn hide" id="logout-btn">Logout</button>
         </div>
 
     </header>
@@ -47,15 +49,29 @@
             <h4>How can we help you?</h4>
             <a type="button" href="#" id="close-chat">X</a>
         </div>
-        
         <ul id="chat" class="chat">
          <li class="message admin flex-items Gap mid-Y "><div class="to-column mid"><img src="./assets/icons/lucide--bot-message-square (1).svg" class="chat-img" alt=""><span>admin</span></div><h6 class="admin-chat">hello</h6></li>
          <li class="message user  to-column mid-Y "><h6 class="user-chat">hello</h6><span>you</span></li>
         </ul>
         <div class="wraper">
-        <input type="text" id="message-body"placeholder="Write your message here...">
+        <input type="text" id="message"placeholder="Write your message here...">
         <button type="button" id="send-message" ><i class="fa fa-send-o"></i></button>
     </div>
+    </div>
+</div>
+<div class=" popup " id="feedback">
+    
+    <div class="form-body to-column  mid Gap-10">
+        <div class="to-column feed-items">
+        <button type="button" id="close-feddback">X</button>
+        <h3>Feedback title</h3>
+        <input type="text" id="feed-head" class="feed-input">
+    </div>
+        <div class="to-column feed-items">
+        <h3>Feedback body</h3>
+        <textarea name="" id="feed-body" class="feed-input" cols="30" rows="10"></textarea>
+    </div>
+        <button class="btn-style btn" id="send">send</button>
     </div>
 </div>
     <section class="flex-items">
@@ -119,7 +135,7 @@
                         <div>
                             <p> 240$ </p>
                             <p>Economy</p>
-                            <button class="btn-style btn" id="flight-btn">Learn more</button>
+                            <button class="btn-style btn" id="feed-back-btn">Feedback</button>
                         </div>
                     </div>
                 </li>
@@ -139,5 +155,6 @@
         </div>
     </footer>
     <script src="./scripts/profile.js"></script>
+    <script src="./scripts/checkSignin.js"></script>
 </body>
 </html>

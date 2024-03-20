@@ -1,5 +1,5 @@
 <?php
-include("connection.php");
+include("credentials.php");
 $given_username=$_POST['username'];
 $password=$_POST['password'];
 $query=$mysqli->prepare("select *  from users where first_name=?");
