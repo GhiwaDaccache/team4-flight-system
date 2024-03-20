@@ -172,6 +172,10 @@ align-items: end;
     font-size: 8px;
     color: lightgray;
 }
+.hide{
+    display: none;
+}
+
 .user-chat{
     background-color: #C7DFFF;
     padding: 0.4rem;

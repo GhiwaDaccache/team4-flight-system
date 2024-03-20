@@ -8,8 +8,13 @@ header('Access-Control-Allow-Headers: Content-Type');
 
 header("Content-Type: application/json");
 header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Credentials: true");
 header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
+<<<<<<< HEAD
 >>>>>>> f08869cdadc280b44b4a3e7545141ed44c789138
+=======
+header("Access-Control-Allow-Headers: Content-Type");
+>>>>>>> d50d43fc095d0eba860f7e66549b795239d03e1e
 
 $host = "localhost";
 $db_user = "root";
@@ -25,7 +30,3 @@ $mysqli = new mysqli($host, $db_user, $db_pass, $db_name);
 if ($mysqli->connect_error) {
     die("Connection failed: " . $mysqli->connect_error);
 }
-
-
-
-

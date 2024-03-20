@@ -17,7 +17,7 @@
     <!-- Links -->
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/utilities.css">
-    <link rel="stylesheet" href="../styles/flights.css">
+   
 
 
     <!-- Icons -->
@@ -40,9 +40,13 @@
         </div>
 
     </header>
-    <div class=" popup">
+    <div class=" popup hide" id="admin-chat">
     <div class="form-body to-column  ">
-        <div class="flex-items mid-Y chat-header Gap-20"><img src="./assets/icons/lucide--bot-message-square (1).svg" alt=""><h4>How can we help you?</h4><a type="button" href="#" onclick="close()">X</a></div>
+        <div class="flex-items mid-Y  chat-header Gap-20 ">
+            <img src="./assets/icons/lucide--bot-message-square (1).svg" alt="">
+            <h4>How can we help you?</h4>
+            <a type="button" href="#" id="close-chat">X</a>
+        </div>
         
         <ul id="chat" class="chat">
          <li class="message admin flex-items Gap mid-Y "><div class="to-column mid"><img src="./assets/icons/lucide--bot-message-square (1).svg" class="chat-img" alt=""><span>admin</span></div><h6 class="admin-chat">hello</h6></li>
@@ -67,8 +71,8 @@
             <h4 id="birth-date">02-07-1980</h4>
             <h4>Passport number :<h4 class="pass-num"></h4></h4>
             <div class="profile-footer mid flex-items">
-            <a type="button" href="#"><img src="./assets/icons/cryptocurrency-color--chat.svg" class="icons chat-admin" alt=""></a>
-            <a type="button" href="#"><i class="fa fa-pencil"></i></a>
+            <button type="button" id="open-admin-chat"  ><img src="./assets/icons/cryptocurrency-color--chat.svg" class="icons chat-admin" alt=""></button>
+            <button type="button" ><i class="fa fa-pencil"></i></button>
             </div>
         </div>
         </div>
@@ -134,5 +138,6 @@
             <i class="fa-brands fa-instagram"></i>
         </div>
     </footer>
+    <script src="./scripts/profile.js"></script>
 </body>
 </html>
