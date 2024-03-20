@@ -1,7 +1,7 @@
 const fromInput = document.getElementById("from-input");
 const toInput = document.getElementById("to-input");
 
-axios.get(`http://localhost/Team 4 - flight system/backend/load-filter.php`)
+axios.get(`http://localhost/flight-agency-project/backend/load-filter.php`)
   .then(response => {
     const airports = response.data.airports;
     airports.forEach(element => {

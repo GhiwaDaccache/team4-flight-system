@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flighter</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="../../styles/utilities.css">
+    <link rel="stylesheet" href="../../styles/add-flight.css">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/96cf59c222.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header class="flex justify-between align-center">
+        <h1 class="font"> Flighter</h1>
+        <div class="flex">
+            <button class="btn-style btn-secondary" id="login-btn">Logout</button>
+        </div>
+    </header>
+    
+    <main class="flex h-full w-full">
+        <div class="side-bar flex column align-center">
+            <p>
+                Dashboard<br>
+                <br>
+                Inbox<br>
+                <br>
+                Financial<br>
+                <br>
+                Reviews<br>
+                <br>
+                <u>Flights</u><br>
+            </p>
+        </div>
+
+        <div class="add-section flex gap  w-full">
+            
+            <div class="flex column gap add-column">
+                <label for="airplane">Airplane</label>
+                <select name="type" id="airplane-input"></select>
+
+                <label for="airline">Airline</label>
+                <select name="type" id="airline-input"></select>
+
+                <label for="depature-airport">Depature airport</label>
+                <select name="type" id="departure-airport-input"></select>
+                
+                <label for="depature-time">Depature time</label>
+                <input id="departure-date" type="date">
+
+            </div>
+
+            <div class="flex column gap add-column">
+                <label for="arrival-airport">Arrival airport</label>
+                <select name="type" id="arrival-airport-input"></select>
+
+                <label for="arrival-time">Arrival time</label>
+                <input id="arrival-date" type="date">
+
+                <label for="price">Price</label>
+                <input type="number" id="price" name="price-input">
+
+                <button class="btn btn-style" id="add-btn">Add</button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../../scripts/admin/add-flight.js"></script>
+
+
+</body>
+</html>
