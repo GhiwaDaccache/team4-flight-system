@@ -75,6 +75,34 @@ background-color:white ;
 .grow{
     width: 60vh;
 }
+.popup{
+    position: fixed;
+    background-color: rgba(110,110, 110, 0.5);
+    width: 100vw;
+    height: 100vh;
+}
+.form-body{
+    
+    background-color: white;
+    position: relative;
+    width: 30%;
+    height: 60%;
+    top: 5%;
+    left: 30%;
+}
+.form-body>.wraper>input{
+    width: 100%;
+    border-style: none;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    height:  100%;
+    padding-left: 10%;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif ;
+    
+}
 .last-traps{
     padding-left: 5%;
     list-style: none;
@@ -85,4 +113,85 @@ background-color:white ;
 }
 .informations{
     margin-bottom: 20%;
+}
+.wraper{
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    top:90%;
+    
+}
+.wraper>button{
+    position: absolute;
+    top:30%;
+    left: 95%;
+    cursor: pointer;
+   
+
+}
+.chat-header{
+   position: relative;
+   top: 0;
+    width: 100%;
+    height: 10%;
+    justify-content: space-between;
+}
+.chat-header >img,h4,a{
+    height: 90%;
+    
+}
+.chat-header>a{
+text-decoration: none;
+color: black;
+width: 25px;
+font-size: 20px;
+text-align: center;
+}
+.chat{
+border: 1px black solid;
+width: 100%;
+height: 75%;
+list-style-image:url("../assets/icons/lucide--bot-message-square.svg");
+padding: 5%;
+
+}
+.chat>li{
+    height: 5vh;
+    width: 100%;
+}
+
+.message>div>span{
+    font-size: 8px;
+    color: lightgray;
+}
+.user{
+display: flex;
+align-items: end;
+}
+.user>span{
+    font-size: 8px;
+    color: lightgray;
+}
+.user-chat{
+    background-color: #C7DFFF;
+    padding: 0.4rem;
+    
+    border-radius: 0.5rem;
+    min-height: 1.5rem;
+  font-size: 0.8rem;
+}
+.chat-img{
+    width: 18px;
+    height: 18px;
+}
+.chat>li>h6{
+    min-width: 100px;
+    
+}
+.admin-chat{
+    padding: 0.4rem;
+    background-color: lightgray;
+    border-radius: 0.5rem;
+    min-height: 1.5rem;
+  font-size: 0.8rem;
 }
