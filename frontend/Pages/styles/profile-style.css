@@ -1,0 +1,220 @@
+
+#profile-img{
+    margin-top: 20%;
+    height: 45%;
+    width: 70%;
+    border-radius: 50%;
+}
+section{
+    background-color: lightgray;
+    height: 90vh;
+    width: 100%;
+}
+.feed-items{
+    width: 90%;
+}
+.feed-input{
+    width: 100%;
+}
+.data-container{
+justify-content: space-between;
+border: 1px none solid;
+height: 100vh;
+width: 30%;
+background-color:white ;
+}
+.icons{
+    height: 40px;
+    width: 40px;
+}
+.chat-admin{
+    position: relative;
+    left: 0%;
+}
+.pref-item{
+    width: 15%;
+}
+.prefer-card{
+    background-color: white;
+    border-radius: 0.2rem;
+    height: 40vh;
+    width: 20vh;
+}
+.prefer-card>img{
+    height: 45%;
+    width: 100%;
+    border-radius:0.2rem;
+}
+.card-footer{
+    justify-content: space-between;
+    padding: 3px;
+}
+.profile-footer {
+    justify-content: space-between;
+   
+}
+.prefernces{
+    height:50%;
+    
+    padding: 10px;
+}
+.pref-list{
+    height: 10rem;
+    width: 70%;
+   overflow-x: scroll;
+   list-style: none;
+   margin-left: 3%;
+
+}
+.prefernces>h2{
+    margin-left: 3%;
+}
+.lists-container{
+    width: 50%;
+    flex-grow: 1;
+}
+.pref-list::-webkit-scrollbar{
+    display: none;
+}
+.flights-reviews{
+    width: 100%;
+}
+.grow{
+    width: 60vh;
+}
+.popup{
+    position: fixed;
+    background-color: rgba(110,110, 110, 0.5);
+    width: 100vw;
+    height: 100vh;
+}
+.form-body{
+    
+    background-color: white;
+    position: relative;
+    width: 30%;
+    height: 80%;
+    top: 0%;
+    left: 30%;
+}
+.form-body>.wraper>input{
+    width: 100%;
+    border-style: none;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    height:  100%;
+    padding-left: 10%;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif ;
+    
+}
+.last-traps{
+    padding-left: 5%;
+    list-style: none;
+}
+
+.flights-reviews>h2{
+ margin-left: 5%;
+}
+.informations{
+    margin-bottom: 20%;
+}
+.wraper{
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    top:90%;
+    
+}
+.wraper>button{
+    position: absolute;
+    top:30%;
+    left: 95%;
+    cursor: pointer;
+   
+
+}
+.chat-header{
+    color: #446188;
+    background-color: #C7DFFF;
+   position: relative;
+   top: 0;
+    width: 100%;
+    height: 10%;
+    justify-content: space-between;
+}
+.chat-header >img,h4,a{
+    height: 90%;
+    
+}
+.chat-header>a{
+text-decoration: none;
+color: black;
+width: 25px;
+font-size: 20px;
+text-align: center;
+}
+.chat{
+border: 1px black solid;
+width: 100%;
+height: 75%;
+list-style-image:url("../assets/icons/lucide--bot-message-square.svg");
+padding: 5%;
+
+}
+.chat>li{
+    height: 5vh;
+    width: 100%;
+}
+
+.message>div>span{
+    font-size: 8px;
+    color: lightgray;
+}
+.user{
+display: flex;
+align-items: end;
+}
+.user>span{
+    font-size: 8px;
+    color: lightgray;
+}
+.hide{
+    display: none;
+}
+
+.user-chat{
+    background-color: #C7DFFF;
+    padding: 0.4rem;
+    
+    border-radius: 0.5rem;
+    min-height: 1.5rem;
+  font-size: 0.8rem;
+}
+.chat-img{
+    width: 18px;
+    height: 18px;
+}
+.chat>li>h6{
+    min-width: 100px;
+    
+}
+.admin-chat{
+    padding: 0.4rem;
+    background-color: lightgray;
+    border-radius: 0.5rem;
+    min-height: 1.5rem;
+  font-size: 0.8rem;
+}
+#close-feddback{
+position: relative;
+width: 2rem;
+left: 95%;
+cursor: pointer;
+background-color: white;
+}
+.form-body{
+    height: fit-content;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/My-tools/styles/layouts.css">
+    <link rel="stylesheet" href="./styles/My-tools/styles/colors.css">
+    
+    <link rel="stylesheet" href="./styles/My-tools/styles/fonts.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/utilities.css">
+    <link rel="stylesheet" href="./styles/profile-style.css">
+
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/96cf59c222.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header class="flex justify-between align-center">
+        <h1 class="font"> Flighter</h1>
+
+        <div class="tabs">
+            <a href="#"><u>Home</u></a>
+            <a href="#">Live</a>
+            <a href="#">Payment</a>
+            <a href="#">Profile</a>
+          </div>
+
+        <div class="flex head-btn">
+            <button class="btn-style btn" id="login-btn">Login</button>
+            <button class="btn-style btn" id="signup-btn">Sign up</button>
+            <button class="btn-style btn hide" id="logout-btn">Logout</button>
+        </div>
+
+    </header>
+    <div class=" popup hide" id="admin-chat">
+    <div class="form-body to-column  ">
+        <div class="flex-items mid-Y  chat-header Gap-20 ">
+            <img src="./assets/icons/lucide--bot-message-square (1).svg" alt="">
+            <h4>How can we help you?</h4>
+            <a type="button" href="#" id="close-chat">X</a>
+        </div>
+        <ul id="chat" class="chat">
+         <li class="message admin flex-items Gap mid-Y "><div class="to-column mid"><img src="./assets/icons/lucide--bot-message-square (1).svg" class="chat-img" alt=""><span>admin</span></div><h6 class="admin-chat">hello</h6></li>
+         <li class="message user  to-column mid-Y "><h6 class="user-chat">hello</h6><span>you</span></li>
+        </ul>
+        <div class="wraper">
+        <input type="text" id="message"placeholder="Write your message here...">
+        <button type="button" id="send-message" ><i class="fa fa-send-o"></i></button>
+    </div>
+    </div>
+</div>
+<div class=" popup " id="feedback">
+    
+    <div class="form-body to-column  mid Gap-10">
+        <div class="to-column feed-items">
+        <button type="button" id="close-feddback">X</button>
+    </div>
+    <div class="to-column feed-items">
+        <h3>flight id</h3>
+        <input type="number" id="flight" class="feed-input">
+    </div>
+    <div class="to-column feed-items">
+        <h3>Rating</h3>
+        <input type="number" id="rate" class="feed-input">
+    </div>
+        <div class="to-column feed-items">
+        <h3>Feedback body</h3>
+        <textarea name="" id="feed-text" class="feed-input" cols="30" rows="10"></textarea>
+    </div>
+        <button class="btn-style btn" id="send">send</button>
+    </div>
+</div>
+    <section class="flex-items">
+        
+        <div class="to-column data-container mid ">
+            <img src="./assets/profile.jpg" id="profile-img" alt="profile-img">
+            <div class="to-column informations Gap-10">
+            <div class="flex-items Gap">
+                <h4 id="firstname">Alex</h4>
+            <h4 id="lastname">Alexander</h4>
+        </div>
+        
+            <h4 id="birth-date">02-07-1980</h4>
+            <h4>Passport number :<h4 id="pass-num"></h4></h4>
+            <h4 id="coins">  </h4>
+            <div class="profile-footer mid flex-items">
+            <button type="button" id="open-admin-chat"  ><img src="./assets/icons/cryptocurrency-color--chat.svg" class="icons chat-admin" alt=""></button>
+            <button type="button" ><i class="fa fa-pencil"></i></button>
+            </div>
+        </div>
+        </div>
+        <div class="to-column lists-container">
+        <div class="prefernces to-column mid-X  Gap-10">
+            <h2>Preferences</h2>
+            <ul class="flex-items mid-Y pref-list Gap">
+                <li class="pref-item">
+            <div class="prefer-card">
+                <img src="./assets/Card-img.jpg" alt="">
+                <div class="flex-fixed mid card-footer">
+                    <span>Airlines</span><i class="fa fa-heart-o"></i></div>
+            </div>
+        </li>
+        </ul>
+        </div>
+        <div class="flights-reviews to-column Gap">
+            <h2>past booking</h2>
+            <ul class="last-traps">
+                <li class="list-item">
+                    <div class=" flex justify-between booking-card ">
+                        <div>
+                            <i class="fa-solid fa-plane-up"></i>
+                            <br>
+                            <br>
+                            <i class="fa-solid fa-plane-up"></i>
+                        </div>
+                        <div>
+                            <p>5h 00  pm - 8h 30  pm </p>
+                            <br>
+                            <p>Transavia France</p>
+                        </div>
+                        <div>
+                            <p>Non stop</p>
+                            <br>
+                            <p>1 stop</p>
+                        </div>
+                        <div>
+                            <p>BEI-FRA</p>
+                            <br>
+                            <p>FRA-BEI</p>
+                        </div>
+                        <div class="line"></div>
+                        <div>
+                            <p> 240$ </p>
+                            <p>Economy</p>
+                            <button class="btn-style btn" id="feed-back-btn">Feedback</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </section>
+    
+    <footer class="flex align-center justify-between">
+        <div class="footer-text">
+            Copyright © 1996–2024 flighter.com™. All rights reserved
+        </div>
+        <div class="flex gap">
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./scripts/profile.js"></script>
+    <script src="./scripts/checkSignin.js"></script>
+</body>
+</html>

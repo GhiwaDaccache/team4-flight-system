@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/My-tools/styles/layouts.css">
+    <link rel="stylesheet" href="./styles/My-tools/styles/colors.css">
+    <link rel="stylesheet" href="./styles/signup-styles.css">
+    <link rel="stylesheet" href="./styles/My-tools/styles/fonts.css">
+</head>
+<body>
+    <section class="flex-items container-section Inter">
+        <div class="background"></div>
+        <div class="form-container flex-items mid">
+            <div action="" id="signup-form" class="to-column mid Gap-10">
+                <h2>Welcome back</h2>
+                <span class="display-none prussian-red wrong-signup">Wrong email or password!!</span>
+                <div class="to-column">
+                <h5>username</h5>
+                <span class="prussian-red empty-username display-none">Please enter username</span>
+                <input type="text"value="username"id="firstname" class="gray-color">
+                
+            </div>
+            <div class="to-column">
+                <h5>last name</h5>
+                <span class="prussian-red empty-lastname display-none ">Please enter last name</span>
+                <input type="text"value="lastname"id="lastname" class="gray-color" >
+            </div> 
+            <div class="to-column">
+                <h5>email</h5>
+                <span class="prussian-red empty-email display-none ">Please enter email</span>
+                <input type="text"value="email"id="email" class="gray-color" >
+            </div>
+             
+            <div class="to-column">
+                <h5>password</h5>
+                <span class="prussian-red empty-password display-none ">Please enter password</span>
+                <input type="password"value="password"id="password" class="gray-color" >
+            </div>
+           
+            
+                <span class="flex-items gray-color">Did you have an account ?<a  href="./signin.html"><h5>Sign in</h5></a></span>
+
+                <button type="button" id="submit">Sign up</button></div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./scripts/signup.js"></script>
+</body>
+</html>
