@@ -15,6 +15,10 @@
     flex-direction: column;
 }
 
+.hidden{
+    display: none;
+}
+
 .center{
     justify-content: center;
     align-items: center;

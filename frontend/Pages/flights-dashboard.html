@@ -26,8 +26,8 @@
         <h1 class="font"> Flighter</h1>
 
         <div class="tabs">
-            <a href="#">Home</a>
-            <a href="#"><u>Live</u></a>
+            <a href="../index.html">Home</a>
+            <a href="../Pages/flights-dashboard.html"><u>Live</u></a>
             <a href="#">Payment</a>
             <a href="#">Profile</a>
           </div>
@@ -49,21 +49,12 @@
             <h2>Status</h2>
         </div>
 
-        <div class="cards-container-f flex column center gap">
-            <div class="flex justify-between align-center table-card w-full">
-                <div class="flex table-header-left ">
-                    <p>Flight</p>
-                    <p>From</p>
-                    <p>To</p>
-                </div>
-                <p>Status</p>
-
-        </div>
+        <div class="cards-container-f flex column center gap" id="flights-container">
     </section>
 
 
 
-    <footer class="flex align-center justify-between">
+    <!-- <footer class="flex align-center justify-between">
         <div class="footer-text">
             Copyright © 1996–2024 flighter.com™. All rights reserved
         </div>
@@ -72,8 +63,11 @@
             <i class="fa-brands fa-facebook-f"></i>
             <i class="fa-brands fa-instagram"></i>
         </div>
-    </footer>
+    </footer> -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../scripts/status.js"></script>
 
 </body>
 </html>
