@@ -10,7 +10,6 @@ let ways = waysInput.options[waysInput.selectedIndex].value;
 waysInput.addEventListener('change', ()=>{
   ways = waysInput.options[waysInput.selectedIndex].value;
   if(ways == "One way"){
-    returnDate.value = "";
     returnDate.disabled = true;
   }
   else{
@@ -23,8 +22,10 @@ waysInput.addEventListener('change', ()=>{
 searchButton.addEventListener('click', ()=>{
     const fromInput = document.getElementById("from-input");
     const toInput = document.getElementById("to-input");
+
     const departureDate = document.getElementById("departure-date").value;
     returnDate = document.getElementById("return-date").value;
+
     waysInput = document.getElementById("type-input")
     
     const airportFrom = fromInput.options[fromInput.selectedIndex].value;
@@ -38,10 +39,16 @@ searchButton.addEventListener('click', ()=>{
 
 
 
-    axios.get(`http://localhost/Team 4 - flight system/backend/filter.php?from_airport=${airportFrom}&to_airport=${airportTo}&departure_date=${departureDate}&return_date=${returnDate}`)
+    axios.get(`http://localhost/flight-agency-project/backend/filter.php?from_airport=${airportFrom}&to_airport=${airportTo}&departure_date=${departureDate}&return_date=${returnDate}`)
   .then(response => {
+        console.log(response.data.status)
+        if(response.data.status == "No flights"){
+          resultsSection.innerHTML =`<h2>${response.data.message}</h2>`
+
+        }else{
         const flights = response.data.flights;
         resultsSection.innerHTML = '';
+
         if(ways == "One way"){
 
           flights.forEach(element => {
@@ -119,5 +126,5 @@ searchButton.addEventListener('click', ()=>{
         });
     };
 
-  })
+  }})
 })

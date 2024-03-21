@@ -2,7 +2,7 @@ const flightsContainer = document.getElementById("flights-container");
 let currentDate = moment(new Date()).format('YYYY-MM-DD HH:mm');
 
 
-axios.get(`http://localhost/Team 4 - flight system/backend/status.php`)
+axios.get(`http://localhost/flight-agency-project/backend/status.php`)
   .then(response => {
 
     const flights = response.data.flights;
