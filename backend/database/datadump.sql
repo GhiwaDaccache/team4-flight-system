@@ -37,3 +37,19 @@ VALUES (1, NOW(), 'pending', 200.00, 300.00);
 INSERT INTO booking_flights (booking_id, flight_id)
 VALUES (1, 1),
        (1, 2);
+
+INSERT INTO admins (user_id) VALUES (1);
+
+INSERT INTO chats (user_id,admin_id,is_open) VALUES (1,1,1); 
+INSERT INTO chats (user_id,admin_id,is_open) VALUES (2,1,0); 
+INSERT INTO chats (user_id,admin_id,is_open) VALUES (3,1,1); 
+
+
+INSERT INTO messages (chat_id, sender_id, message_text, sent_at)
+VALUES (1, 2, "Hello from user 2!", NOW()),
+       (1, 3, "This is message 1 from user 3.", NOW() + INTERVAL 1 MINUTE),
+       (1, 2, "This is a reply from user 2.", NOW() + INTERVAL 2 MINUTE),
+       (2, 1, "Test message 1 for chat 2", NOW() + INTERVAL 3 MINUTE),
+       (2, 3, "Another message for chat 2", NOW() + INTERVAL 4 MINUTE),
+       (1, 3, "User 3 sent another message!", NOW() + INTERVAL 5 MINUTE),
+       (1, 1, "User 1 joins the conversation!", NOW() + INTERVAL 6 MINUTE);
