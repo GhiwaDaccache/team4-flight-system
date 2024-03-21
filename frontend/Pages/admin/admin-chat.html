@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Chat</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="../../styles/utilities.css">
+    <link rel="stylesheet" href="../../styles/add-flight.css">
+    <link rel="stylesheet" href="../../styles/admin-navbar.css">
+    <link rel="stylesheet" href="../../styles/fly-airplane.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../styles/utilities.css" />
+    <link rel="stylesheet" href="../../styles/admin-chat.css" />
+</head>
+
+<body>
+    <img id="airplane" src="../../styles/assets/airplane-fly-removebg-preview.png" alt="Airplane">
+    <header class="flex justify-between align-center">
+        <h1 class="font"> Flighter</h1>
+        <div class="flex">
+            <button class="btn-style btn-secondary" id="login-btn">Logout</button>
+        </div>
+    </header>
+
+    <main class="flex h-full w-full">
+        <div class="side-bar flex column align-center">
+            <ul>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Inbox</a></li>
+                <li><a href="">Financial</a></li>
+                <li><a href="">Reviews</a></li>
+                <li><a href="">Flights</a></li>
+                <li><a class="active" href="">Inbox</a></li>
+              </ul>
+        </div>
+
+        <div class="container flex center">
+            <div class="w-80 container py-5 px-4">
+                <div class="row rounded-lg overflow-hidden shadow">
+                    <!-- Users box-->
+                    <div class="col-5 px-0">
+                        <div class="bg-white">
+
+                            <div class="bg-gray px-4 py-2 bg-light">
+                                <p class="h5 mb-0 py-1">Recent</p>
+                            </div>
+
+                            <div  class="messages-box">
+                                <div id="sidebar-section" class="list-group rounded-0">
+                                    <a class="list-group-item list-group-item-action active text-white rounded-0"> <!--add active, remove list-group-item-light-->
+                                        <div class="media"><img
+                                                src="https://bootstrapious.com/i/snippets/sn-chat/avatar.svg" alt="user"
+                                                width="50" class="rounded-circle">
+                                            <div class="media-body ml-4">
+                                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                                    <h6 class="mb-0">Jason Doe</h6><small
+                                                        class="small font-weight-bold">25
+                                                        Dec</small>
+                                                </div>
+                                                <p class="font-italic mb-0 text-small">Lorem ipsum dolor sit amet,
+                                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                                    labore.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Chat Box-->
+                    <div class="col-7 px-0">
+                        <div id="chat-section" class="px-4 py-5 chat-box bg-white">
+                            <p>Please select a chat</p>
+                        </div>
+
+                        <!-- Typing area -->
+                        <form action="#" class="bg-light">
+                            <div class="input-group">
+                                <input type="text" placeholder="Type a message" aria-describedby="button-addon2"
+                                    class="form-control rounded-0 border-0 py-4 bg-light">
+                                <div class="input-group-append">
+                                    <button id="button-addon2" type="submit" class="btn btn-link"> <i
+                                            class="fa fa-paper-plane"></i></button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../../scripts/fly-airplane.js"></script>
+    <script src="../../scripts/admin/load-chat.js"></script>
+    <script src="../../scripts/admin/load-inbox.js"></script>
+</body>
+
+</html>

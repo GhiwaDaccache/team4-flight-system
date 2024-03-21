@@ -51,6 +51,15 @@
 .Gap-30{
     gap:30px;
 }
+.Gap-40{
+    gap:40px;
+}
+.Gap-50{
+    gap:50px;
+}
+.Gap-60{
+    gap:60px;
+}
 .column-center{
     display: flex;
     flex-direction: column;
