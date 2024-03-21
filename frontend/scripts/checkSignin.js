@@ -4,29 +4,29 @@ const login=document.querySelector("#login-btn");
 const Signup=document.querySelector("#signup-btn");
 if(signin){
    
-logout.classList.remove("hide");
-login.classList.add("hide");
-Signup.classList.add("hide");
+logout.classList.remove("hidden");
+login.classList.add("hidden");
+Signup.classList.add("hidden");
 
 }
 
 logout.addEventListener('click',()=>{
-    logout.classList.add("hide");
-login.classList.remove("hide");
-Signup.classList.remove("hide");
-    window.location.href="./signin.html";
+    logout.classList.add("hidden");
+login.classList.remove("hidden");
+Signup.classList.remove("hidden");
+    window.location.href="../Pages/signin.html";
     //localStorage.removeItem("credentials")
 })
 Signup.addEventListener('click',()=>{
-    logout.classList.remove("hide");
-login.classList.add("hide");
-Signup.classList.dd("hide");
-    window.location.href="./signin.html"
+    logout.classList.remove("hidden");
+login.classList.add("hidden");
+Signup.classList.add("hidden");
+    window.location.href="../frontend/Pages/signup.html"
 })
 login.addEventListener('click',()=>{
-    logout.classList.remove("hide");
-    login.classList.add("hide");
-    Signup.classList.dd("hide");
-    window.location.href="./signup.html"
+    logout.classList.remove("hidden");
+    login.classList.add("hidden");
+    Signup.classList.add("hidden");
+    window.location.href="../frontend/Pages/signin.html"
 
 })

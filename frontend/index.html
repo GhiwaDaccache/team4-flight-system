@@ -27,17 +27,17 @@
         <div class="tabs">
             <a href="./index.html"><u>Home</u></a>
             <a href="../frontend/Pages/flights-dashboard.html">Live</a>
-            <a href="#">Payment</a>
             <a href="./Pages/profile.html">Profile</a>
           </div>
 
         <div class="flex">
             <button class="btn-style btn" id="login-btn">Login</button>
             <button class="btn-style btn" id="signup-btn">Sign up</button>
+            <button class="btn-style btn hidden" id="logout-btn">Logout</button>
         </div>
 
     </header>
-    
+
     <section class="main flex column gap align-center">
         <h2>Find your next flight</h2>
         <section class="filter flex align-center justify-around">
@@ -155,6 +155,7 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="../frontend/scripts/load-filter.js"></script>
+    <script src="../frontend/scripts/checkSignin.js"></script>
     <script src="../frontend/scripts/filter.js"></script>
 
 </body>
