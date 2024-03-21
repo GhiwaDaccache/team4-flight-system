@@ -58,7 +58,7 @@ background-color:white ;
     
     padding: 10px;
 }
-.pref-list{
+#pref-list{
     height: 10rem;
     width: 70%;
    overflow-x: scroll;
@@ -73,7 +73,7 @@ background-color:white ;
     width: 50%;
     flex-grow: 1;
 }
-.pref-list::-webkit-scrollbar{
+#pref-list::-webkit-scrollbar{
     display: none;
 }
 .flights-reviews{
