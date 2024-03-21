@@ -9,12 +9,38 @@ const close_feed_back=document.querySelector("#close-feddback");
 const send_feed_back=document.querySelector("#send");
 const user_data=localStorage.getItem("credentials");
 const feedback_send=document.querySelector("#send");
+const preferences_list=document.querySelector("#pref-list");
 var id=null;
 
 const get_message_url="http://localhost/flight-agency-project/backend/getmessages.php";
 const send_message_url="http://localhost/flight-agency-project/backend/sendmessage.php";
 const send_feedback_url="http://localhost/flight-agency-project/backend/sendfeedback.php";
+const get_preferences_url="http://localhost/flight-agency-project/backend/getpreferences.php"
 
+const getPreferences=async (url,id)=>{
+    try{
+    const formData =new FormData();
+    formData.append("id",id)
+    const result=await axios.post(url,formData);
+    const {data}=await result;
+    const{preferences}=data
+    
+    preferences.forEach(el=>{
+        const{airline_id}=el
+        
+        preferences_list.innerHTML+=`<li class="pref-item">
+        <div class="prefer-card">
+            <img src="./assets/Card-img.jpg" alt="">
+            <div class="flex-fixed mid card-footer">
+                <span>Airline:${airline_id}</span><i class="fa fa-heart-o"></i></div>
+        </div>
+    </li>`
+    })
+}
+    catch(err){
+        console.log(err)
+    }
+}
 
 const sendMessage=async(url,id,message,chat=1)=>{
     try{
@@ -108,3 +134,4 @@ feedback_send.addEventListener('click',async()=>{
             console.log(err)
         }
 })
+getPreferences(get_preferences_url,id)
