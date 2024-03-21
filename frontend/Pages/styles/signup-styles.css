@@ -1,0 +1,106 @@
+.container-section{
+   
+    height: 100%;
+    width: 100%;
+}
+.background{
+    border: 1px none solid;
+    height: 110vh;
+    width: 49%;
+    background-image: url("../assets/signin-signup-bj.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.form-container{
+    
+    height: 110vh;
+    width: 49%;
+    flex-grow: 1;
+}
+#signup-form{
+    padding-top: 5%;
+    width: 60%;
+    height: fit-content;
+    background-color: #C7DFFF;
+    border-radius: 0.3rem;
+}
+
+h2,h5{
+    display: flex;
+    margin-left: 10px;
+    justify-self: start;
+
+  
+}
+h2{
+    height: 17vh;
+    
+}
+.gray-color{
+    color: #858585; 
+}
+#signup-form>div{
+    gap: 5px;
+    width: 60%;
+}
+#signup-form>div>input,button{
+    padding-left: 5px;
+    border-style: none;
+    height: 2.5rem;
+    border-radius: 0.1rem;
+    width: 100%;
+    margin-left: 10px;
+}
+span{
+    margin-left: 4%;
+}
+.display-none{
+    display: none;
+}
+.display-block{
+    display: none;
+}
+a{
+    flex-grow: 1;
+    text-decoration: none;
+    color: black;
+    
+   
+}
+a>h5{
+    width: 100%;
+}
+button{
+    margin-top: 12vh;
+    width: 30%;
+    font-size: 1.3rem;
+   background-color: #126FE7;
+   color: white;
+   margin-bottom: 10px;
+}
+@media (max-width:700px) {
+    .background{
+        display: none;
+    }
+    .form-container{
+        width: 100%;
+        background-image: url("../assets/signin-signup-bj.jpg");
+        background-attachment: fixed;
+    }
+    #signup-form{
+        width: 100%;
+    }
+    span{
+        display: flex;
+        font-size: 0.9rem;
+        flex-direction: row;
+        height: 3vh;
+        width: 60%;
+    }
+    a{
+        width: 30%;
+       
+    }
+}
