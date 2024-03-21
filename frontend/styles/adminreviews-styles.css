@@ -56,3 +56,7 @@ a{
 #reviews>li{
     width: 100%;
 }
+#reviews td{
+    text-align: center;
+    
+}
