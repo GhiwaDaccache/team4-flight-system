@@ -1,0 +1,23 @@
+.side-bar{
+    width: 20%;
+    background-color: #C7E0FF;
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.add-section{
+    padding: 20px;
+}
+
+.add-section input, select{
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    min-height: 30px;
+    border-color: #C7E0FF;
+    width: 50%;
+}
+
+.add-column{
+    width: 50%;
+}
